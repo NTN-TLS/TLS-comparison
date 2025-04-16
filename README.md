@@ -80,6 +80,7 @@ flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 c
 ![4579b462-75bf-41a2-8f0c-7cc63777ac0b](https://github.com/user-attachments/assets/cee7caf3-3cc1-4cde-a33e-d1964c566b22)
 
 
+Analysis below was conducted on CPU without AES specific instruction set
 ![obraz](https://github.com/user-attachments/assets/c9117f60-2d0c-4644-8cef-b689b6248b7d)
 
 
