@@ -75,3 +75,6 @@ flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 c
 
 **Fastest Cipher:** `TLS_AES_128_GCM_SHA256` (Average Total Time: **0.000064 seconds**)
 
+
+![4579b462-75bf-41a2-8f0c-7cc63777ac0b](https://github.com/user-attachments/assets/cee7caf3-3cc1-4cde-a33e-d1964c566b22)
+
