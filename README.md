@@ -47,6 +47,31 @@ flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 c
 
 ## ARM procesor without AES instruction set support (RPI 4)
 
+### Cipher Performance Results (Min/Max/Avg Times in Seconds)
+
+| Cipher                        | Enc Min   | Enc Max   | Enc Avg   | Dec Min   | Dec Max   | Dec Avg   | Total Avg | Success |
+|------------------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|---------|
+| TLS_AES_128_GCM_SHA256       | 0.001213  | 0.012243  | 0.001299  | 0.001206  | 0.004034  | 0.001289  | 0.002587  | 1       |
+| TLS_AES_256_GCM_SHA384       | 0.001410  | 0.005862  | 0.001497  | 0.001403  | 0.004195  | 0.001485  | 0.002981  | 1       |
+| TLS_CHACHA20_POLY1305_SHA256 | 0.000272  | 0.000606  | 0.000282  | 0.000272  | 0.000419  | 0.000279  | 0.000561  | 1       |
+| TLS_AES_128_CCM_SHA256       | 0.003161  | 0.004870  | 0.003279  | 0.003131  | 0.004444  | 0.003242  | 0.006520  | 1       |
+| TLS_AES_128_CCM_8_SHA256     | 0.003160  | 0.003801  | 0.003272  | 0.003135  | 0.003497  | 0.003225  | 0.006497  | 1       |
+
+**Fastest Cipher:** `TLS_CHACHA20_POLY1305_SHA256` (Average Total Time: **0.000561 seconds**)
+
 
 
 ## ARM procesor with AES instruction set support (RPI 5)
+
+### Cipher Performance Results (Min/Max/Avg Times in Seconds)
+
+| Cipher                        | Enc Min   | Enc Max   | Enc Avg   | Dec Min   | Dec Max   | Dec Avg   | Total Avg | Success |
+|------------------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|---------|
+| TLS_AES_128_GCM_SHA256       | 0.000029  | 0.000079  | 0.000032  | 0.000029  | 0.000079  | 0.000031  | 0.000064  | 1       |
+| TLS_AES_256_GCM_SHA384       | 0.000036  | 0.000044  | 0.000036  | 0.000034  | 0.000044  | 0.000035  | 0.000070  | 1       |
+| TLS_CHACHA20_POLY1305_SHA256 | 0.000093  | 0.000104  | 0.000094  | 0.000093  | 0.000103  | 0.000094  | 0.000188  | 1       |
+| TLS_AES_128_CCM_SHA256       | 0.000071  | 0.000091  | 0.000071  | 0.000078  | 0.000088  | 0.000079  | 0.000151  | 1       |
+| TLS_AES_128_CCM_8_SHA256     | 0.000071  | 0.000141  | 0.000071  | 0.000078  | 0.000088  | 0.000079  | 0.000151  | 1       |
+
+**Fastest Cipher:** `TLS_AES_128_GCM_SHA256` (Average Total Time: **0.000064 seconds**)
+
