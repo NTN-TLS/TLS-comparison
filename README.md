@@ -1,12 +1,16 @@
 # TLS-comparison
+
 This script compares most common TLS1.3 ciphers efficiency
 
 # Results from different CPUs
+
 This is the script output collected from various CPUs
 
 ## AES-NI enabled Intel procesor
+
 flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx hypervisor lahf_lm pti ssbd ibrs ibpb stibp tsc_adjust arat md_clear flush_l1d arch_capabilities
 Cipher Performance Results (Min/Max/Avg Times in Seconds):
+
 --------------------------------------------------------------------------------------------------------------
 Cipher                    Enc Min    Enc Max    Enc Avg    Dec Min    Dec Max    Dec Avg    Total Avg  Success
 --------------------------------------------------------------------------------------------------------------
@@ -20,9 +24,10 @@ Fastest Cipher: TLS_AES_128_GCM_SHA256 (Average Total Time: 0.000117 seconds)
 
 
 ## Intel procesor without AES instruction set support
+
 flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 movbe popcnt rdrand hypervisor lahf_lm abm 3dnowprefetch ibrs_enhanced fsgsbase bmi1 bmi2 invpcid rdseed clflushopt md_clear flush_l1d arch_capabilities
 
-Cipher Performance Results (Min/Max/Avg Times in Seconds):
+
 --------------------------------------------------------------------------------------------------------------
 Cipher                    Enc Min    Enc Max    Enc Avg    Dec Min    Dec Max    Dec Avg    Total Avg  Success   
 --------------------------------------------------------------------------------------------------------------
